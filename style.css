@@ -48,12 +48,41 @@ button[type="submit"]{
 	font-weight: bold;
 }
 
+.slider-marques{
+	overflow:hidden;
+	position:relative;
+	display: flex;
+}
+
+.item-marques{
+	display: flex;
+	justify-content: center;
+  	align-items: center;
+	background-color: white;
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	padding: 15px;
+}
+
+.item-marques:hover{
+	
+}
+
+.item-marques img{
+	max-width: 200px;
+	max-height: 200px;
+}
+
+
+/* footer */
+
 .couleurFooter{
 	background-color: white;
 }
 
 .grilleFooter{
-	margin-top: 20px;
+	margin-top: 40px;
 	padding-bottom: 20px;
 	padding-top: 100px;
 	padding-left:300px;
@@ -86,8 +115,29 @@ button[type="submit"]{
 }
 
 .emplacementHashtag{
+	display: flex;
+	justify-content: start;
+  	align-items: center;
 	grid-column: 3;
 	grid-row: 1;
+}
+
+#facebook svg{
+	transition-duration: 0.5s;
+}
+
+#facebook:hover svg{
+	transform: translateY(-8px);
+	transition-duration: 0.5s;
+}
+
+#twitter svg{
+	transition-duration: 0.5s;
+}
+
+#twitter:hover svg{
+	transform: translateY(-8px);
+	transition-duration: 0.5s;
 }
 
 .emplacementBonsPlans{
@@ -107,18 +157,7 @@ button[type="submit"]{
 	margin-top: 15px;
 }
 
-.tel{
-	border: darkgrey, solid, 2px;
-	border-radius: 10px;
-	width: 150px;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-top: 2px;
-	padding-bottom: 2px;
-	margin-top: 10px;
-}
-
-.mail{
+.tel, .mail{
 	background-color: transparent;
 	border:black, solid, 2px;
 	border-radius: 10px;
@@ -131,6 +170,14 @@ button[type="submit"]{
 	cursor: pointer;
 }
 
+.tel{
+	cursor: default;
+}
+
+.tel:hover , .mail:hover{
+	border:darkgrey, solid, 2px;
+}
+
 .votreEmail{
 	width: 200px;
 	border: black, solid, 2px;
@@ -140,4 +187,13 @@ button[type="submit"]{
 	padding-bottom: 15px;
 	padding-right: 8px;
 	padding-left: 24px;
+}
+
+.svgEmail:hover svg{
+	transform: translateX(8px);
+	transition-duration: 0.5s;
+}
+
+.svgEmail svg{
+	transition-duration: 0.5s;
 }

@@ -1,17 +1,24 @@
-const sliderMarques = document.querySelector('.slider-marques')
-const itemMarques = document.querySelector('.item-marques')
+marquesSlider = document.querySelector(".slider-marques");
 
-let isPressed = false;
+let clientX = null;
+let grabbing = false;
+let prevDistanceScrolled = null;
+let distanceToScroll;
 
-let cursoX;
-sliderMarques.addEventListener("mousedown", (e) => {
-    isPressed = true;
-    cursorX = e.offsetX - itemMarques.offsetLeft;
-    sliderMarques.style.cursor = "grabbing";
-});
+marquesSlider.addEventListener("mousedown",(e) => {
+  clientX = e.clientX;
+  grabbing=true;
+})
 
-sliderMarques.addEventListener("mousemove", (e) => {
-   if (!isPressed) return;
-   e.preventDefault();
-   itemMarques.style.left = `${e.offsetX - cursorX}px`;
-});
+marquesSlider.addEventListener("mouseup",() => {
+  grabbing=false;
+  prevDistanceScrolled += distanceToScroll;
+})
+
+marquesSlider.addEventListener("mousemove",(e) => {
+  if (grabbing) {
+    let newClientX = e.clientX;
+    distanceToScroll = newClientX - clientX;
+    marquesSlider.style.transform = `translateX(${distanceToScroll + prevDistanceScrolled}px)`
+  }
+})

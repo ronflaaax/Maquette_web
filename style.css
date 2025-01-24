@@ -48,25 +48,48 @@ button[type="submit"]{
 	font-weight: bold;
 }
 
+section {
+  overflow: hidden;
+}
+
+.container{
+	width: 90%;
+  	max-width: 1200px;
+}
+
 .slider-marques{
-	overflow:hidden;
-	position:relative;
+	cursor: default;
+  	transition: transform 0.3s smooth;
+}
+
+.container-marques{
 	display: flex;
+  	flex-wrap: nowrap;
+  	overflow: visible;
+  	padding: 1em;
+  	scroll-snap-type: x mandatory;
+  	scroll-padding: 1em;
+  	-webkit-overflow-scrolling: touch;
+    &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .item-marques{
 	display: flex;
-	justify-content: center;
-  	align-items: center;
-	background-color: white;
-	width: 200px;
-	height: 200px;
-	margin: 20px;
-	padding: 15px;
+  	flex-direction: column;
+  	justify-content: space-around;
+  	scroll-snap-align: start;
+  	min-width: 200px;
+  	max-width: 200px;
+  	padding: 0.5em;
+  	margin: 0 1.25em;
+  	background-color: white;
+  	transition: transform .1s;
 }
 
 .item-marques:hover{
-	
+	transform: scale(1.1);
 }
 
 .item-marques img{

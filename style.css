@@ -8,16 +8,19 @@ body{
 	background-color: #E82723;
 }
 
-
-a{
-	text-decoration: none;
-	color: black;
+h2{
+	color: white;
 }
 
 p{
 	font-size: 18px;
 	margin-bottom: 5px;
 	margin-top: 5px;
+}
+
+a{
+	text-decoration: none;
+	color: black;
 }
 
 input[type="email"]{
@@ -41,6 +44,10 @@ button[type="submit"]{
 	color: #EC1C24;
 }
 
+.jaune{
+	color: #F8DF00;
+}
+
 .italique{
 	font-style: italic;
 }
@@ -49,7 +56,9 @@ button[type="submit"]{
 	font-weight: bold;
 }
 
-section {
+/*sliders*/
+
+.slider{
   overflow: hidden;
 }
 
@@ -57,6 +66,8 @@ section {
 	width: 90%;
   	max-width: 1200px;
 }
+
+/* slider marques */
 
 .slider-marques{
 	cursor: default;
@@ -98,10 +109,215 @@ section {
 	max-height: 200px;
 }
 
+/*slider actus et bons plans*/
+
+
+.grilleSliderActus{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	padding-right: 150px;
+	padding-left: 150px;
+}
+
+.titreActus{
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.titreBonsPlans{
+	grid-column: 1;
+	grid-row: 2;
+}
+
+button .boutonActus{
+	grid-column: 2;
+	grid-row: 1;
+	text-align: right;
+}
+
+.controllerActus{
+	grid-column: 2;
+	grid-row: 2;
+}
+
+
+.carousel-container {
+	display: block;
+	width: 100%;
+	max-width: 2000px;
+	margin-bottom: 150px;
+	margin-top: 150px;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.slider-actus {
+	display: flex;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	border-radius: 20px;
+	scrollbar-width: none;
+	scroll-behavior: smooth;
+}
+  
+.slider-actus::-webkit-scrollbar {
+	display: none;
+}
+
+.slider-actus.dragging {
+	scroll-behavior: auto;
+}
+
+
+.container-actus {
+	display: flex;
+	width: auto;
+	width: fit-content;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	gap: 8px;
+}
+  
+.item-actus{
+	display: flex;
+	width: 350px;
+	min-width: 350px;
+	height: 500px;
+	margin: 15px;
+	flex-grow: 0;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+	border-radius: 20px;
+	overflow: hidden;
+	background-color: white;
+	transition-property: width, min-width, height, flex, flex-grow, flex-shrink, flex-basis, opacity;
+	transition-duration: 240ms;
+}
+    
+.image-actus {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	object-fit: cover;
+	object-position: center;
+	transition: all 2s;
+}
+
+.content-actus {
+	display: flex;
+	width: 100%;
+	max-height: 100%;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+	padding: 16px;
+	color: white;
+	transform: translateY(100%);
+	transition-property: transform, color, flex, height, flex-basis, opacity;
+	transition-duration: 240ms;
+	background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75));
+	overflow: hidden;
+	border-radius: 0 0 20px 20px;
+	z-index: 2;
+}
+
+.content-actus {
+	transition-delay: 100ms;
+	transform: translateY(0%);
+
+}
+
+button.slider-nav {
+	display: inline-flex;
+	width: 20px;
+	height: 20px;
+	min-width: 20px;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #ccc;
+	border-radius: 999px;
+	background-color: #fff;
+	position: relative;
+	top: 50%;
+	z-index: 10;
+	cursor: pointer; 
+}
+
+button.prev {
+	left: 0;
+	transform: translate(-50%, calc(-50% - 13px));
+}
+
+button.next {
+	right: 0;
+	transform: translate(50%, calc(-50% - 13px));
+}
+
+.carousel-scrollbar, .carousel-scrollbar .scrollbar-track {
+	display: flex;
+	width: 100%;
+	align-items: center;
+}
+
+
+
+.carousel-scrollbar {
+	margin: 10px;
+	padding: 4px 0;
+}
+  
+.scrollbar-track {
+	border-radius: 999px;
+	height: 3px;
+	background-color: lightgray;
+
+}
+
+.scrollbar-thumb {
+	width: 20%;
+	max-width: 100px;
+	height: 100%;
+	border-radius: 999px;
+	cursor: pointer;
+	position: relative;
+	background-color: white;
+	transition: transform 200ms, background-color 200ms, height 200ms;
+}
+
+.scrollbar-thumb::after {
+	content: '';
+	display: block;
+	height: 16px;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+
+.scrollbar-thumb:hover {
+	height: 250%;
+}
+
+.scrollbar-thumb .dragging:hover {
+	background-color: rgba(0, 0, 0, 1);
+	height: 400%;
+}
+
+.scrollbar-thumb .dragging::after {
+    height: 24px;
+}
 
 /* footer */
 
-.couleurFooter{
+Footer{
 	background-color: white;
 }
 
@@ -221,6 +437,9 @@ section {
 .svgEmail svg{
 	transition-duration: 0.5s;
 }
+
+/**/
+
 .mathis{
     display: flex;
     gap: 3.5rem;
@@ -323,7 +542,7 @@ section {
   	stroke: #E82723;
 }
 
-.accesibilité{
+.accessibilite{
 	height: 12rem;
 	width: 12rem;
 	display: flex;
@@ -336,7 +555,7 @@ section {
 	opacity: 1;
 }
 
-.accesibilité:hover{
+.accessibilite:hover{
 	transition:linear 0.2s;
 	height: 12rem;
 	width: 12rem;
@@ -387,6 +606,7 @@ section {
 }
 
 /*la classe shopping*/
+
 .shopping{
 	height: 64.75rem;
 	display: flex;
@@ -395,9 +615,7 @@ section {
 	
 	
 }
-h2{
-	color: white;
-}
+
 .gris{
 	color : transparent;
 	color: transparent;            /* Texte transparent */

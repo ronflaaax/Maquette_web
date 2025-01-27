@@ -29,3 +29,6 @@ Belkacem Brahmia:
 Difficultés rencontrées: 
 
 -Dans le slider marques, la fonction "grab à du mal à fonctionner" (problème de js)
+-infos et bon plan (mauvaise gestion du temps)
+-manque un slider (mauvaise gestion du temps)
+-slider actus (boutons et scrollbar fonctionnent mais pas une fois dans le grid)

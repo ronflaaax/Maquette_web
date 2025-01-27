@@ -618,7 +618,8 @@ Footer{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	
+	padding-left: 17.125rem;
+	padding-right: 17.125rem;
 	
 }
 
@@ -628,6 +629,151 @@ Footer{
 	-webkit-text-stroke: 1px white; /* Bordures blanches (Webkit, Chrome, Edge, Safari) */
 	  
 }
+
+.lesbox{
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+	color: white;
+	justify-content: center;
+	
+}
+.maison{
+	height: 12rem;
+	width: 12rem;
+	display: flex;
+	gap: 1.25rem; 
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 5px solid #FFFFFF;
+	border-radius: 18px;
+	opacity: 1;
+}
+.restauration{
+	height: 12rem;
+	width: 12rem;
+	display: flex;
+	gap: 1.25rem; 
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 5px solid #FFFFFF;
+	border-radius: 18px;
+	opacity: 1;
+}
+.restauration:hover{
+	transition:linear 0.2s;
+	height: 12rem;
+	width: 12rem;
+	display: flex;
+	gap: 1.25rem; 
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 5px solid #FFFFFF;
+	border-radius: 18px;
+	opacity: 1;
+	color: black;
+	background-color: white;
+	margin-bottom: 1.25rem;
+	
+  	stroke: #E82723;
+}
+.mb{
+	height: 12rem;
+	width: 12rem;
+	display: flex;
+	gap: 1.25rem; 
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 5px solid #FFFFFF;
+	border-radius: 18px;
+	opacity: 1;
+}
+.mb:hover{
+	transition:linear 0.2s;
+	height: 12rem;
+	width: 12rem;
+	display: flex;
+	gap: 1.25rem; 
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 5px solid #FFFFFF;
+	border-radius: 18px;
+	opacity: 1;
+	color: black;
+	background-color: white;
+	margin-bottom: 1.25rem;
+	
+  	stroke: #E82723;
+}
+.bs{
+	height: 12rem;
+	width: 12rem;
+	display: flex;
+	gap: 1.25rem; 
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 5px solid #FFFFFF;
+	border-radius: 18px;
+	opacity: 1;
+}
+
+.bs:hover{
+	transition:linear 0.2s;
+	height: 12rem;
+	width: 12rem;
+	display: flex;
+	gap: 1.25rem; 
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 5px solid #FFFFFF;
+	border-radius: 18px;
+	opacity: 1;
+	color: black;
+	background-color: white;
+	margin-bottom: 1.25rem;
+	
+  	stroke: #E82723;
+}
+
+.cl{
+	height: 12rem;
+	width: 12rem;
+	display: flex;
+	gap: 1.25rem; 
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 5px solid #FFFFFF;
+	border-radius: 18px;
+	opacity: 1;
+}
+
+.cl:hover{
+	transition:linear 0.2s;
+	height: 12rem;
+	width: 12rem;
+	display: flex;
+	gap: 1.25rem; 
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border: 5px solid #FFFFFF;
+	border-radius: 18px;
+	opacity: 1;
+	color: black;
+	background-color: white;
+	margin-bottom: 1.25rem;
+	
+  	stroke: #E82723;
+}
+
 .styled{
 	height: 1.5rem;
 	width: 15.688;
@@ -637,13 +783,13 @@ Footer{
 	border:  transparent ;
 	border-radius: 5%;
 }
-.lesbox{
-    display: flex;
-    gap: 3.5rem;
-    align-items: center;
-	color: white;
-	justify-content: center;
-	
+
+.shop{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	font-size: 2.375rem;
+	align-items: flex-end;
 }
 .footerpage{
 	display: flex;

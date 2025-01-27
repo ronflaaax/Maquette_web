@@ -8,6 +8,7 @@ body{
 	background-color: #E82723;
 }
 
+
 a{
 	text-decoration: none;
 	color: black;
@@ -220,14 +221,13 @@ section {
 .svgEmail svg{
 	transition-duration: 0.5s;
 }
-
 .mathis{
     display: flex;
-    justify-content: space-between;
+    gap: 3.5rem;
     align-items: center;
 	color: white;
-	padding-left: 20.125rem;
-	padding-right: 20.125rem;
+	justify-content: center;
+	
 }
 
 
@@ -385,3 +385,46 @@ section {
 	
   	stroke: #E82723;
 }
+
+/*la classe shopping*/
+.shopping{
+	height: 64.75rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+	
+}
+h2{
+	color: white;
+}
+.gris{
+	color : transparent;
+	color: transparent;            /* Texte transparent */
+	-webkit-text-stroke: 1px white; /* Bordures blanches (Webkit, Chrome, Edge, Safari) */
+	  
+}
+.styled{
+	height: 1.5rem;
+	width: 15.688;
+	color: #E82723;
+	background-color: white;
+	opacity: 1;
+	border:  transparent ;
+	border-radius: 5%;
+}
+.lesbox{
+    display: flex;
+    gap: 3.5rem;
+    align-items: center;
+	color: white;
+	justify-content: center;
+	
+}
+.footerpage{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+

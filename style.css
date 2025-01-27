@@ -12,6 +12,10 @@ h3, h2{
 	color: white;
 }
 
+h2{
+	font-size: 70px;
+}
+
 p{
 	font-size: 18px;
 	margin-bottom: 5px;
@@ -114,19 +118,21 @@ button[type="submit"]{
 
 .grilleSliderActus{
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	padding-right: 150px;
-	padding-left: 150px;
+	grid-template-columns: 1fr 2fr;
+	margin-right: 150px;
+	margin-left: 150px;
 }
 
 .titreActus{
 	grid-column: 1;
 	grid-row: 1;
+	text-align: left;
 }
 
 .titreBonsPlans{
 	grid-column: 1;
 	grid-row: 2;
+	text-align: right;
 }
 
 button .boutonActus{
@@ -153,7 +159,7 @@ button .boutonActus{
 }
 
 .slider-actus {
-	display: flex;
+	padding: 0;
 	width: 100%;
 	height: auto;
 	overflow: auto;
@@ -241,9 +247,9 @@ button.slider-nav {
 	min-width: 20px;
 	align-items: center;
 	justify-content: center;
-	border: 1px solid #ccc;
+	border: none;
 	border-radius: 999px;
-	background-color: #fff;
+	background-color: transparent;
 	position: relative;
 	top: 50%;
 	z-index: 10;

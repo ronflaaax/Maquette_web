@@ -8,7 +8,7 @@ body{
 	background-color: #E82723;
 }
 
-h2{
+h3, h2{
 	color: white;
 }
 
@@ -616,7 +616,7 @@ Footer{
 	
 }
 
-.gris{
+.transparent{
 	color : transparent;
 	color: transparent;            /* Texte transparent */
 	-webkit-text-stroke: 1px white; /* Bordures blanches (Webkit, Chrome, Edge, Safari) */
